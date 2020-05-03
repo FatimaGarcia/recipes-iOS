@@ -1,15 +1,15 @@
 //
-//  personalRecipesTests.swift
-//  personalRecipesTests
+//  PersonalRecipesTests.swift
+//  PersonalRecipesTests
 //
 //  Created by Javier Giner Alvarez on 03/05/2020.
 //  Copyright © 2020 jginerafatimagc.com. All rights reserved.
 //
 
 import XCTest
-@testable import personalRecipes
+@testable import PersonalRecipes
 
-class personalRecipesTests: XCTestCase {
+class PersonalRecipesTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

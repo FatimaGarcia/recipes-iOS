@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		062A1A38245F4B2A00E95CDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A37245F4B2A00E95CDE /* AppDelegate.swift */; };
 		062A1A3A245F4B2A00E95CDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A39245F4B2A00E95CDE /* SceneDelegate.swift */; };
-		062A1A3C245F4B2A00E95CDE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A3B245F4B2A00E95CDE /* FirstViewController.swift */; };
-		062A1A3E245F4B2A00E95CDE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A3D245F4B2A00E95CDE /* SecondViewController.swift */; };
+		062A1A3C245F4B2A00E95CDE /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A3B245F4B2A00E95CDE /* RecipesListViewController.swift */; };
+		062A1A3E245F4B2A00E95CDE /* RecipesMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A3D245F4B2A00E95CDE /* RecipesMakerViewController.swift */; };
 		062A1A41245F4B2A00E95CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A3F245F4B2A00E95CDE /* Main.storyboard */; };
 		062A1A43245F4B2D00E95CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A42245F4B2D00E95CDE /* Assets.xcassets */; };
 		062A1A46245F4B2D00E95CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A44245F4B2D00E95CDE /* LaunchScreen.storyboard */; };
-		062A1A51245F4B2D00E95CDE /* personalRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A50245F4B2D00E95CDE /* personalRecipesTests.swift */; };
+		062A1A51245F4B2D00E95CDE /* PersonalRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A50245F4B2D00E95CDE /* PersonalRecipesTests.swift */; };
+		062A1A5C245F4FAB00E95CDE /* RecipesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062A1A34245F4B2A00E95CDE /* personalRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = personalRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		062A1A34245F4B2A00E95CDE /* PersonalRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062A1A37245F4B2A00E95CDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		062A1A39245F4B2A00E95CDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		062A1A3B245F4B2A00E95CDE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		062A1A3D245F4B2A00E95CDE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		062A1A3B245F4B2A00E95CDE /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		062A1A3D245F4B2A00E95CDE /* RecipesMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesMakerViewController.swift; sourceTree = "<group>"; };
 		062A1A40245F4B2A00E95CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		062A1A42245F4B2D00E95CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062A1A45245F4B2D00E95CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		062A1A47245F4B2D00E95CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		062A1A4C245F4B2D00E95CDE /* personalRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = personalRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		062A1A50245F4B2D00E95CDE /* personalRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalRecipesTests.swift; sourceTree = "<group>"; };
+		062A1A4C245F4B2D00E95CDE /* PersonalRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		062A1A50245F4B2D00E95CDE /* PersonalRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalRecipesTests.swift; sourceTree = "<group>"; };
 		062A1A52245F4B2D00E95CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,8 @@
 		062A1A2B245F4B2900E95CDE = {
 			isa = PBXGroup;
 			children = (
-				062A1A36245F4B2A00E95CDE /* personalRecipes */,
-				062A1A4F245F4B2D00E95CDE /* personalRecipesTests */,
+				062A1A36245F4B2A00E95CDE /* PersonalRecipes */,
+				062A1A4F245F4B2D00E95CDE /* PersonalRecipesTests */,
 				062A1A35245F4B2A00E95CDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,42 +74,75 @@
 		062A1A35245F4B2A00E95CDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				062A1A34245F4B2A00E95CDE /* personalRecipes.app */,
-				062A1A4C245F4B2D00E95CDE /* personalRecipesTests.xctest */,
+				062A1A34245F4B2A00E95CDE /* PersonalRecipes.app */,
+				062A1A4C245F4B2D00E95CDE /* PersonalRecipesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		062A1A36245F4B2A00E95CDE /* personalRecipes */ = {
+		062A1A36245F4B2A00E95CDE /* PersonalRecipes */ = {
 			isa = PBXGroup;
 			children = (
 				062A1A37245F4B2A00E95CDE /* AppDelegate.swift */,
 				062A1A39245F4B2A00E95CDE /* SceneDelegate.swift */,
-				062A1A3B245F4B2A00E95CDE /* FirstViewController.swift */,
-				062A1A3D245F4B2A00E95CDE /* SecondViewController.swift */,
+				062A1A60245F529B00E95CDE /* Network */,
+				062A1A5F245F524500E95CDE /* Models */,
+				062A1A5E245F521B00E95CDE /* Views */,
+				062A1A5D245F517A00E95CDE /* Controllers */,
 				062A1A3F245F4B2A00E95CDE /* Main.storyboard */,
 				062A1A42245F4B2D00E95CDE /* Assets.xcassets */,
 				062A1A44245F4B2D00E95CDE /* LaunchScreen.storyboard */,
 				062A1A47245F4B2D00E95CDE /* Info.plist */,
 			);
-			path = personalRecipes;
+			path = PersonalRecipes;
 			sourceTree = "<group>";
 		};
-		062A1A4F245F4B2D00E95CDE /* personalRecipesTests */ = {
+		062A1A4F245F4B2D00E95CDE /* PersonalRecipesTests */ = {
 			isa = PBXGroup;
 			children = (
-				062A1A50245F4B2D00E95CDE /* personalRecipesTests.swift */,
+				062A1A50245F4B2D00E95CDE /* PersonalRecipesTests.swift */,
 				062A1A52245F4B2D00E95CDE /* Info.plist */,
 			);
-			path = personalRecipesTests;
+			path = PersonalRecipesTests;
+			sourceTree = "<group>";
+		};
+		062A1A5D245F517A00E95CDE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				062A1A3B245F4B2A00E95CDE /* RecipesListViewController.swift */,
+				062A1A3D245F4B2A00E95CDE /* RecipesMakerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		062A1A5E245F521B00E95CDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		062A1A5F245F524500E95CDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		062A1A60245F529B00E95CDE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		062A1A33245F4B2A00E95CDE /* personalRecipes */ = {
+		062A1A33245F4B2A00E95CDE /* PersonalRecipes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 062A1A55245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "personalRecipes" */;
+			buildConfigurationList = 062A1A55245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "PersonalRecipes" */;
 			buildPhases = (
 				062A1A30245F4B2A00E95CDE /* Sources */,
 				062A1A31245F4B2A00E95CDE /* Frameworks */,
@@ -117,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = personalRecipes;
+			name = PersonalRecipes;
 			productName = personalRecipes;
-			productReference = 062A1A34245F4B2A00E95CDE /* personalRecipes.app */;
+			productReference = 062A1A34245F4B2A00E95CDE /* PersonalRecipes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		062A1A4B245F4B2D00E95CDE /* personalRecipesTests */ = {
+		062A1A4B245F4B2D00E95CDE /* PersonalRecipesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 062A1A58245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "personalRecipesTests" */;
+			buildConfigurationList = 062A1A58245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "PersonalRecipesTests" */;
 			buildPhases = (
 				062A1A48245F4B2D00E95CDE /* Sources */,
 				062A1A49245F4B2D00E95CDE /* Frameworks */,
@@ -135,9 +170,9 @@
 			dependencies = (
 				062A1A4E245F4B2D00E95CDE /* PBXTargetDependency */,
 			);
-			name = personalRecipesTests;
+			name = PersonalRecipesTests;
 			productName = personalRecipesTests;
-			productReference = 062A1A4C245F4B2D00E95CDE /* personalRecipesTests.xctest */;
+			productReference = 062A1A4C245F4B2D00E95CDE /* PersonalRecipesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 062A1A2F245F4B2900E95CDE /* Build configuration list for PBXProject "personalRecipes" */;
+			buildConfigurationList = 062A1A2F245F4B2900E95CDE /* Build configuration list for PBXProject "PersonalRecipes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,8 +207,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				062A1A33245F4B2A00E95CDE /* personalRecipes */,
-				062A1A4B245F4B2D00E95CDE /* personalRecipesTests */,
+				062A1A33245F4B2A00E95CDE /* PersonalRecipes */,
+				062A1A4B245F4B2D00E95CDE /* PersonalRecipesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062A1A46245F4B2D00E95CDE /* LaunchScreen.storyboard in Resources */,
+				062A1A5C245F4FAB00E95CDE /* RecipesList.storyboard in Resources */,
 				062A1A43245F4B2D00E95CDE /* Assets.xcassets in Resources */,
 				062A1A41245F4B2A00E95CDE /* Main.storyboard in Resources */,
 			);
@@ -203,8 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062A1A3E245F4B2A00E95CDE /* SecondViewController.swift in Sources */,
-				062A1A3C245F4B2A00E95CDE /* FirstViewController.swift in Sources */,
+				062A1A3E245F4B2A00E95CDE /* RecipesMakerViewController.swift in Sources */,
+				062A1A3C245F4B2A00E95CDE /* RecipesListViewController.swift in Sources */,
 				062A1A38245F4B2A00E95CDE /* AppDelegate.swift in Sources */,
 				062A1A3A245F4B2A00E95CDE /* SceneDelegate.swift in Sources */,
 			);
@@ -214,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062A1A51245F4B2D00E95CDE /* personalRecipesTests.swift in Sources */,
+				062A1A51245F4B2D00E95CDE /* PersonalRecipesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		062A1A4E245F4B2D00E95CDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 062A1A33245F4B2A00E95CDE /* personalRecipes */;
+			target = 062A1A33245F4B2A00E95CDE /* PersonalRecipes */;
 			targetProxy = 062A1A4D245F4B2D00E95CDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -369,12 +405,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764P6D8P9A;
 				INFOPLIST_FILE = personalRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jginerafatimagc.personalRecipes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PersonalRecipes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,12 +424,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764P6D8P9A;
 				INFOPLIST_FILE = personalRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jginerafatimagc.personalRecipes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PersonalRecipes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,7 +454,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/personalRecipes.app/personalRecipes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalRecipes.app/PersonalRecipes";
 			};
 			name = Debug;
 		};
@@ -438,14 +476,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/personalRecipes.app/personalRecipes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonalRecipes.app/PersonalRecipes";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		062A1A2F245F4B2900E95CDE /* Build configuration list for PBXProject "personalRecipes" */ = {
+		062A1A2F245F4B2900E95CDE /* Build configuration list for PBXProject "PersonalRecipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				062A1A53245F4B2D00E95CDE /* Debug */,
@@ -454,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		062A1A55245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "personalRecipes" */ = {
+		062A1A55245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "PersonalRecipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				062A1A56245F4B2D00E95CDE /* Debug */,
@@ -463,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		062A1A58245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "personalRecipesTests" */ = {
+		062A1A58245F4B2D00E95CDE /* Build configuration list for PBXNativeTarget "PersonalRecipesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				062A1A59245F4B2D00E95CDE /* Debug */,
