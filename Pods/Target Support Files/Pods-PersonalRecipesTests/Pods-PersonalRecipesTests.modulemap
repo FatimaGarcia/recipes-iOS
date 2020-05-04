@@ -1,0 +1,6 @@
+framework module Pods_PersonalRecipesTests {
+  umbrella header "Pods-PersonalRecipesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
