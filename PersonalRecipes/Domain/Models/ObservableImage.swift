@@ -25,6 +25,6 @@ class ObservableImage: UIImageView {
         return URLSession.shared.rx
             .data(request: urlRequest)
             .map { data in UIImage(data: data) }
-            .catchErrorJustReturn(nil)
+            .catchErrorJustReturn(UIImage(named: "food"))
     }
 }
