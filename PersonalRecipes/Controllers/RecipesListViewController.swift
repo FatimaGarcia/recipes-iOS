@@ -40,12 +40,11 @@ class RecipesListViewController: UIViewController {
         recipesTableView.rx.modelSelected(RecipeModel.self)
             .subscribe(onNext: { [weak self] model in
                 guard let self = self else { return}
-                let vc = UIViewController()
-                vc.view.backgroundColor = .red
+                let vc = RecipesDetailViewController(viewModel: model)
                 let backItem = UIBarButtonItem()
                 backItem.title = "Atrás"
                 self.navigationItem.backBarButtonItem = backItem
-                print("Seleccionado: \(model.name)")
+                vc.navigationItem.title = model.name
                 self.navigationController?.pushViewController(vc, animated: true)
             })
             .disposed(by: disposeBag)

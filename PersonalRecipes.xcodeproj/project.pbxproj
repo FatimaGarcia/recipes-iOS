@@ -21,6 +21,9 @@
 		062A1A7D24602C6400E95CDE /* RecipesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A7824602C6400E95CDE /* RecipesRequest.swift */; };
 		062A1A7E24602C6400E95CDE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A7924602C6400E95CDE /* APIRequest.swift */; };
 		062A1A7F24602C6400E95CDE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A7B24602C6400E95CDE /* Recipe.swift */; };
+		062A1A86246049FC00E95CDE /* RecipesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A84246049FC00E95CDE /* RecipesDetailViewController.swift */; };
+		062A1A87246049FC00E95CDE /* RecipesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A85246049FC00E95CDE /* RecipesDetailViewController.xib */; };
+		062A1A892460752C00E95CDE /* ObservableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A882460752C00E95CDE /* ObservableImage.swift */; };
 		4BD4205040F729EE4946D6FA /* Pods_PersonalRecipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2110B8E5DD6D77018CD84189 /* Pods_PersonalRecipes.framework */; };
 		51FB85D27CD27B85523EFED8 /* Pods_PersonalRecipesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBACCA1227C8B20AF6F767 /* Pods_PersonalRecipesTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,9 @@
 		062A1A7824602C6400E95CDE /* RecipesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesRequest.swift; sourceTree = "<group>"; };
 		062A1A7924602C6400E95CDE /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		062A1A7B24602C6400E95CDE /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		062A1A84246049FC00E95CDE /* RecipesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailViewController.swift; sourceTree = "<group>"; };
+		062A1A85246049FC00E95CDE /* RecipesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesDetailViewController.xib; sourceTree = "<group>"; };
+		062A1A882460752C00E95CDE /* ObservableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableImage.swift; sourceTree = "<group>"; };
 		0CDBACCA1227C8B20AF6F767 /* Pods_PersonalRecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalRecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2110B8E5DD6D77018CD84189 /* Pods_PersonalRecipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalRecipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C40268A8F851D6B8369263F /* Pods-PersonalRecipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalRecipesTests.debug.xcconfig"; path = "Target Support Files/Pods-PersonalRecipesTests/Pods-PersonalRecipesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 			children = (
 				062A1A3B245F4B2A00E95CDE /* RecipesListViewController.swift */,
 				062A1A3D245F4B2A00E95CDE /* RecipesMakerViewController.swift */,
+				062A1A84246049FC00E95CDE /* RecipesDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */,
+				062A1A85246049FC00E95CDE /* RecipesDetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				062A1A7B24602C6400E95CDE /* Recipe.swift */,
+				062A1A882460752C00E95CDE /* ObservableImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062A1A46245F4B2D00E95CDE /* LaunchScreen.storyboard in Resources */,
+				062A1A87246049FC00E95CDE /* RecipesDetailViewController.xib in Resources */,
 				062A1A5C245F4FAB00E95CDE /* RecipesList.storyboard in Resources */,
 				062A1A43245F4B2D00E95CDE /* Assets.xcassets in Resources */,
 				062A1A41245F4B2A00E95CDE /* Main.storyboard in Resources */,
@@ -370,6 +380,8 @@
 				062A1A7F24602C6400E95CDE /* Recipe.swift in Sources */,
 				062A1A7E24602C6400E95CDE /* APIRequest.swift in Sources */,
 				062A1A7C24602C6400E95CDE /* APIClient.swift in Sources */,
+				062A1A892460752C00E95CDE /* ObservableImage.swift in Sources */,
+				062A1A86246049FC00E95CDE /* RecipesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

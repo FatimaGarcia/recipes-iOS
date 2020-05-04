@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipesDetailViewController" customModule="PersonalRecipes" customModuleProvider="target">
+            <connections>
+                <outlet property="ingredientsContainerStackView" destination="swN-14-dHc" id="RJy-OG-a3Q"/>
+                <outlet property="procedureContainerStackView" destination="oWc-3Q-zgJ" id="6nb-3Z-cRY"/>
+                <outlet property="recipeImageView" destination="zZc-NO-1hZ" id="LGI-zX-MPQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j85-Rb-axS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-CA-zKH">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-NO-1hZ" customClass="ObservableImage" customModule="PersonalRecipes" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="128" id="epn-6B-IKS"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4t-Sf-dbC">
+                                    <rect key="frame" x="8" y="168" width="398" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="swN-14-dHc">
+                                    <rect key="frame" x="8" y="196.5" width="398" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="250" constant="35" id="Ddh-rd-Lkq"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasos a seguir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyi-08-bLe">
+                                    <rect key="frame" x="8" y="267.5" width="398" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oWc-3Q-zgJ">
+                                    <rect key="frame" x="8" y="296" width="398" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="250" constant="30" id="VQm-23-qDv"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="H4t-Sf-dbC" firstAttribute="top" secondItem="zZc-NO-1hZ" secondAttribute="bottom" constant="40" id="20J-ws-aQz"/>
+                                <constraint firstAttribute="trailing" secondItem="tyi-08-bLe" secondAttribute="trailing" constant="8" id="Lbf-Em-B4G"/>
+                                <constraint firstItem="swN-14-dHc" firstAttribute="leading" secondItem="bZK-CA-zKH" secondAttribute="leading" constant="8" id="Ofg-jZ-p44"/>
+                                <constraint firstItem="tyi-08-bLe" firstAttribute="leading" secondItem="bZK-CA-zKH" secondAttribute="leading" constant="8" id="QB8-Wt-IsD"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oWc-3Q-zgJ" secondAttribute="bottom" constant="16" id="Qrl-M8-UKf"/>
+                                <constraint firstItem="zZc-NO-1hZ" firstAttribute="top" secondItem="bZK-CA-zKH" secondAttribute="top" id="RA9-c7-uPh"/>
+                                <constraint firstItem="oWc-3Q-zgJ" firstAttribute="leading" secondItem="bZK-CA-zKH" secondAttribute="leading" constant="8" id="TCm-hD-ajq"/>
+                                <constraint firstAttribute="trailing" secondItem="oWc-3Q-zgJ" secondAttribute="trailing" constant="8" id="gsS-ub-Rfn"/>
+                                <constraint firstAttribute="trailing" secondItem="H4t-Sf-dbC" secondAttribute="trailing" constant="8" id="hiQ-4W-oNc"/>
+                                <constraint firstAttribute="trailing" secondItem="zZc-NO-1hZ" secondAttribute="trailing" id="i30-2F-r6I"/>
+                                <constraint firstAttribute="trailing" secondItem="swN-14-dHc" secondAttribute="trailing" constant="8" id="iUD-Nr-pN5"/>
+                                <constraint firstItem="oWc-3Q-zgJ" firstAttribute="top" secondItem="tyi-08-bLe" secondAttribute="bottom" constant="8" id="nTI-In-chi"/>
+                                <constraint firstItem="zZc-NO-1hZ" firstAttribute="leading" secondItem="bZK-CA-zKH" secondAttribute="leading" id="pwf-5g-kXd"/>
+                                <constraint firstItem="swN-14-dHc" firstAttribute="top" secondItem="H4t-Sf-dbC" secondAttribute="bottom" constant="8" id="rUx-lr-Vsk"/>
+                                <constraint firstItem="tyi-08-bLe" firstAttribute="top" secondItem="swN-14-dHc" secondAttribute="bottom" constant="36" id="uNd-Yn-H4q"/>
+                                <constraint firstItem="H4t-Sf-dbC" firstAttribute="leading" secondItem="bZK-CA-zKH" secondAttribute="leading" constant="8" id="x7M-pB-rlf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bZK-CA-zKH" firstAttribute="height" secondItem="j85-Rb-axS" secondAttribute="height" priority="250" id="FS4-qm-jHW"/>
+                        <constraint firstAttribute="trailing" secondItem="bZK-CA-zKH" secondAttribute="trailing" id="b51-Rv-W39"/>
+                        <constraint firstItem="bZK-CA-zKH" firstAttribute="top" secondItem="j85-Rb-axS" secondAttribute="top" id="efi-yC-fhF"/>
+                        <constraint firstItem="bZK-CA-zKH" firstAttribute="leading" secondItem="j85-Rb-axS" secondAttribute="leading" id="rpZ-NT-BXM"/>
+                        <constraint firstItem="bZK-CA-zKH" firstAttribute="width" secondItem="j85-Rb-axS" secondAttribute="width" id="uWz-dj-fV3"/>
+                        <constraint firstAttribute="bottom" secondItem="bZK-CA-zKH" secondAttribute="bottom" id="xFm-mU-U7M"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="5BT-JP-BV8"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Nde-pr-eJM"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j85-Rb-axS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="03g-6h-o4b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j85-Rb-axS" secondAttribute="trailing" id="B1p-e8-wt2"/>
+                <constraint firstItem="j85-Rb-axS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JtW-D6-ixM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="j85-Rb-axS" secondAttribute="bottom" id="N6U-ql-4ep"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </view>
+    </objects>
+</document>
