@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +10,7 @@
         <!--Lista-->
         <scene sceneID="A5l-Yp-RQN">
             <objects>
-                <viewController storyboardIdentifier="repicesListStoryBoard" id="RYi-P7-6Ab" customClass="RecipesListViewController" customModule="personalRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="repicesListStoryBoard" id="RYi-P7-6Ab" customClass="RecipesListViewController" customModule="PersonalRecipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mwI-mL-89Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,19 +18,36 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QWj-NF-LT5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="simpleCell" id="eVk-S0-VjL">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eVk-S0-VjL" id="wDP-rW-GWF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="47C-Ha-aX2" firstAttribute="bottom" secondItem="QWj-NF-LT5" secondAttribute="bottom" id="0se-Ya-nG3"/>
+                            <constraint firstItem="QWj-NF-LT5" firstAttribute="leading" secondItem="47C-Ha-aX2" secondAttribute="leading" id="1xQ-OF-KcP"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="leading" secondItem="47C-Ha-aX2" secondAttribute="leading" id="4rk-rp-1mW"/>
+                            <constraint firstItem="QWj-NF-LT5" firstAttribute="bottom" secondItem="47C-Ha-aX2" secondAttribute="bottom" id="PhJ-0m-8OX"/>
+                            <constraint firstItem="QWj-NF-LT5" firstAttribute="top" secondItem="47C-Ha-aX2" secondAttribute="top" id="egb-C2-Iel"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="top" secondItem="47C-Ha-aX2" secondAttribute="top" id="j3g-rV-GTf"/>
                             <constraint firstItem="47C-Ha-aX2" firstAttribute="trailing" secondItem="QWj-NF-LT5" secondAttribute="trailing" id="kl7-3h-TNx"/>
+                            <constraint firstItem="QWj-NF-LT5" firstAttribute="trailing" secondItem="47C-Ha-aX2" secondAttribute="trailing" id="wM7-4k-RrZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="47C-Ha-aX2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lista" image="house.fill" catalog="system" badgeValue="New" id="vBx-aX-Ykz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="recipesTableView" destination="QWj-NF-LT5" id="Jdk-66-Hzn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vO9-Lz-XVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

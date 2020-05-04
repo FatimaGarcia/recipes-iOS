@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,11 @@
 		062A1A46245F4B2D00E95CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A44245F4B2D00E95CDE /* LaunchScreen.storyboard */; };
 		062A1A51245F4B2D00E95CDE /* PersonalRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A50245F4B2D00E95CDE /* PersonalRecipesTests.swift */; };
 		062A1A5C245F4FAB00E95CDE /* RecipesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */; };
+		062A1A6224600A4E00E95CDE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A6124600A4E00E95CDE /* Recipe.swift */; };
+		062A1A6424600BF800E95CDE /* RecipesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A6324600BF800E95CDE /* RecipesRequest.swift */; };
+		062A1A6624600C5F00E95CDE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A6524600C5F00E95CDE /* APIRequest.swift */; };
+		062A1A6824600DB500E95CDE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A6724600DB500E95CDE /* APIClient.swift */; };
+		062A1A6B246023E500E95CDE /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062A1A6A246023E500E95CDE /* Current.swift */; };
 		4BD4205040F729EE4946D6FA /* Pods_PersonalRecipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2110B8E5DD6D77018CD84189 /* Pods_PersonalRecipes.framework */; };
 		51FB85D27CD27B85523EFED8 /* Pods_PersonalRecipesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBACCA1227C8B20AF6F767 /* Pods_PersonalRecipesTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +49,11 @@
 		062A1A50245F4B2D00E95CDE /* PersonalRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalRecipesTests.swift; sourceTree = "<group>"; };
 		062A1A52245F4B2D00E95CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		062A1A5B245F4FAB00E95CDE /* RecipesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesList.storyboard; sourceTree = "<group>"; };
+		062A1A6124600A4E00E95CDE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = PersonalRecipes/Recipe.swift; sourceTree = SOURCE_ROOT; };
+		062A1A6324600BF800E95CDE /* RecipesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipesRequest.swift; path = PersonalRecipes/RecipesRequest.swift; sourceTree = SOURCE_ROOT; };
+		062A1A6524600C5F00E95CDE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = PersonalRecipes/APIRequest.swift; sourceTree = SOURCE_ROOT; };
+		062A1A6724600DB500E95CDE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = PersonalRecipes/APIClient.swift; sourceTree = SOURCE_ROOT; };
+		062A1A6A246023E500E95CDE /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		0CDBACCA1227C8B20AF6F767 /* Pods_PersonalRecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalRecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2110B8E5DD6D77018CD84189 /* Pods_PersonalRecipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalRecipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C40268A8F851D6B8369263F /* Pods-PersonalRecipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalRecipesTests.debug.xcconfig"; path = "Target Support Files/Pods-PersonalRecipesTests/Pods-PersonalRecipesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,8 +107,7 @@
 			children = (
 				062A1A37245F4B2A00E95CDE /* AppDelegate.swift */,
 				062A1A39245F4B2A00E95CDE /* SceneDelegate.swift */,
-				062A1A60245F529B00E95CDE /* Network */,
-				062A1A5F245F524500E95CDE /* Models */,
+				062A1A69246023B000E95CDE /* Domain */,
 				062A1A5E245F521B00E95CDE /* Views */,
 				062A1A5D245F517A00E95CDE /* Controllers */,
 				062A1A3F245F4B2A00E95CDE /* Main.storyboard */,
@@ -138,15 +147,31 @@
 		062A1A5F245F524500E95CDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				062A1A6124600A4E00E95CDE /* Recipe.swift */,
 			);
-			path = Models;
+			name = Models;
+			path = ../Models;
 			sourceTree = "<group>";
 		};
 		062A1A60245F529B00E95CDE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				062A1A6324600BF800E95CDE /* RecipesRequest.swift */,
+				062A1A6524600C5F00E95CDE /* APIRequest.swift */,
+				062A1A6724600DB500E95CDE /* APIClient.swift */,
 			);
-			path = Network;
+			name = Network;
+			path = ../Network;
+			sourceTree = "<group>";
+		};
+		062A1A69246023B000E95CDE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				062A1A6A246023E500E95CDE /* Current.swift */,
+				062A1A60245F529B00E95CDE /* Network */,
+				062A1A5F245F524500E95CDE /* Models */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		28EE6FF85C1449D9435F3E35 /* Frameworks */ = {
@@ -166,7 +191,6 @@
 				7C40268A8F851D6B8369263F /* Pods-PersonalRecipesTests.debug.xcconfig */,
 				E72D62FFF487294418689E33 /* Pods-PersonalRecipesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -339,10 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062A1A6B246023E500E95CDE /* Current.swift in Sources */,
 				062A1A3E245F4B2A00E95CDE /* RecipesMakerViewController.swift in Sources */,
+				062A1A6624600C5F00E95CDE /* APIRequest.swift in Sources */,
+				062A1A6424600BF800E95CDE /* RecipesRequest.swift in Sources */,
+				062A1A6824600DB500E95CDE /* APIClient.swift in Sources */,
 				062A1A3C245F4B2A00E95CDE /* RecipesListViewController.swift in Sources */,
 				062A1A38245F4B2A00E95CDE /* AppDelegate.swift in Sources */,
 				062A1A3A245F4B2A00E95CDE /* SceneDelegate.swift in Sources */,
+				062A1A6224600A4E00E95CDE /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
