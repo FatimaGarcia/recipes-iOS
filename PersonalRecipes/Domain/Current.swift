@@ -12,4 +12,5 @@ import RxSwift
 
 public enum Current {
     static var recipes: BehaviorRelay<[RecipeModel]> = BehaviorRelay(value: [])
+    static var showLoading = BehaviorRelay<Bool>(value: true)
 }

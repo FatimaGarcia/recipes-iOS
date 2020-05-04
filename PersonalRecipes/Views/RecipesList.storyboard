@@ -29,6 +29,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-3b-dW7">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -36,6 +40,8 @@
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="leading" secondItem="47C-Ha-aX2" secondAttribute="leading" id="1xQ-OF-KcP"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="leading" secondItem="47C-Ha-aX2" secondAttribute="leading" id="4rk-rp-1mW"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="bottom" secondItem="47C-Ha-aX2" secondAttribute="bottom" id="PhJ-0m-8OX"/>
+                            <constraint firstItem="cF8-3b-dW7" firstAttribute="centerY" secondItem="mwI-mL-89Z" secondAttribute="centerY" id="QHS-Wr-2Qb"/>
+                            <constraint firstItem="cF8-3b-dW7" firstAttribute="centerX" secondItem="mwI-mL-89Z" secondAttribute="centerX" id="Y1u-cB-vhm"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="top" secondItem="47C-Ha-aX2" secondAttribute="top" id="egb-C2-Iel"/>
                             <constraint firstItem="QWj-NF-LT5" firstAttribute="top" secondItem="47C-Ha-aX2" secondAttribute="top" id="j3g-rV-GTf"/>
                             <constraint firstItem="47C-Ha-aX2" firstAttribute="trailing" secondItem="QWj-NF-LT5" secondAttribute="trailing" id="kl7-3h-TNx"/>
@@ -46,6 +52,7 @@
                     <tabBarItem key="tabBarItem" title="Lista" image="house.fill" catalog="system" badgeValue="New" id="vBx-aX-Ykz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="cF8-3b-dW7" id="aan-hp-gXl"/>
                         <outlet property="recipesTableView" destination="QWj-NF-LT5" id="Jdk-66-Hzn"/>
                     </connections>
                 </viewController>

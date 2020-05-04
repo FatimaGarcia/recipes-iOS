@@ -13,6 +13,7 @@ class APIClient {
     private let baseURL = URL(string: "http://localhost:4000/")!
 
     func send<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
+        Current.showLoading.accept(true)
         return Observable<T>.create { observer in
             let request = apiRequest.request(with: self.baseURL)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -23,6 +24,7 @@ class APIClient {
                     observer.onError(error)
                 }
                 observer.onCompleted()
+                Current.showLoading.accept(false)
             }
             task.resume()
 
